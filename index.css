@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: beige; */
+}
+.full_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.win_img{
+    display: flex;
+    justify-content: center;
+}
+.win_img>img{
+    width:0px;
+      transition: 0s ease-in-out;
+      position: absolute;
+      /* width: 900px; */
+    z-index: -1;
+    opacity: .6;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+}
+.about_game{
+   display: flex;
+   flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+/* margin-top: 1rem; */
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+p{
+    padding: 1rem;
+    /* width:52rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.game_container{
+    display: grid;
+    grid-template-columns: repeat(3,6vw);
+    grid-template-rows: repeat(3,6vw);
+    
+}
+.box{
+    border: 2px solid black;
+    transition-duration: 2s;
+}
+.box_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.box_text:hover{
+    /* background-color: rgb(248, 248, 244); */
+}
+.game_info{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #2e5a5a;
+    
+}
+button{
+    padding: 0.4rem 1.4rem;
+    font-size: 1.3rem;
+    background-color: green;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(2, 112, 2);
+}
+
+.red_line{
+    width: 0vw;
+    background-color: red;
+    height: 0.2rem;
+    position: absolute;
+    transition: width 0s ease-in-out;
+    top:2rem;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+@media only screen and (max-width: 700px){
+.about_game>h1{
+    font-size: 1.5rem;
+}
+.about_game>p{
+    font-size: .7rem;
+}
+.game_info{
+    font-size: 1rem;
+}
+button{
+    font-size: 1rem;
+}
+}
+@media only screen and (max-width: 450px){
+.about_game>h1{
+    font-size: 1.1rem;
+}
+.about_game>p{
+    font-size: .6rem;
+}
+.game_info{
+    font-size: .8rem;
+}
+button{
+    font-size: .8rem;
+}
+}
